@@ -50,6 +50,9 @@ const Enrollment = () => {
         onChange={(e) => setSelectedCourse(e.target.value)}
       >
         <option value="">Select a course</option>
+        {/* Pour tester */}
+        <option value="">Java</option>
+        <option value="">PHP</option>
         {courses.map((course) => (
           <option key={course.id} value={course.id}>
             {course.title}
